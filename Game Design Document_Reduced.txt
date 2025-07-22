@@ -1,0 +1,67 @@
+# High Concept
+A game where you dig up skeletons from the ground, throw them into a cauldron to resurrect them, and recruit them as allies to explore a dungeon.
+
+# Core Gameplay Loop
+The player wakes up on the first floor of a dungeon.
+While exploring the dungeon, various events occur:
+Unearth and resurrect skeletons to recruit party members.
+Encounter monsters and engage in combat.
+Discover equipment and relics.
+Interact with NPCs and objects (e.g. shops, statues, traps).
+Find the staircase leading down to descend to the next floor.
+Defeat the final boss on the lowest floor to clear the game.
+
+# Exploration System
+Similar to Crypt of the NecroDancer, the player explores a tile-based, top-down 2D dungeon.
+Tiles include empty spaces, obstacle tiles, item-bearing tiles like minerals, and traps.
+All actions—digging, unlocking chests, removing obstacles—are bound to the movement input.
+Similar to NecroKing or He is Coming, each move consumes a resource (e.g., food/hunger system, tentatively planned).
+
+# Combat System
+Combat triggers when the player enters the same tile as an enemy.
+Uses a turn-based, automated combat system similar to He is Coming, where character and item effects resolve in order.
+Each character has fixed passive and active skills. Turn order is determined by speed stat.
+Like Darkest Dungeon, up to 4 characters are lined up in a row, facing up to 4 enemies.
+There are no skills that hit specific ranks, but skills have maximum range and hit random targets within that range.
+Character positioning is set during exploration and cannot be changed during combat.
+If the protagonist dies, it’s an instant game over. Other characters leave behind corpses upon death (cannot be resurrected).
+
+# Characters & Skills
+Characters can exist in one of three states: resurrected, corpse, or skeleton.
+The player and up to 3 other resurrected characters can be in the party at once (max 4).
+Corpses cannot be carried. Skeletons can be carried if you have an urn item.
+Each character has four base stats: HP, ATK, DEF, and SPD.
+Characters also have a non-combat stat called affection, which influences events and dialogues.
+Characters can equip one or more gear items.
+Every character has at least one active skill; passive skills are optional.
+Some characters are larger than 1 tile (e.g., golems, dragons take 2–3 spaces).
+
+## Protagonist
+If they die, it’s game over.
+Must always be in the party.
+
+## Human-Type Characters
+High resurrection cost, low drop rate.
+Overall higher stats than monster-types.
+Includes both cute girls and thick, rugged middle-aged men.
+
+## Monster-Type Characters
+Low resurrection cost, high drop rate.
+Overall lower stats than humans.
+Includes goblins, slimes, red dragons, etc.
+
+## Swapping Party Members
+Kill the character: you can obtain the matching skeleton on that same floor in the next run.
+Release the character: you can obtain the skeleton within ±1 floor range in the next run.
+Sacrifice at an altar: you obtain the skeleton immediately.
+Similar to Made in Abyss, after multiple runs the dungeon structure changes and skeletons no longer stack deeper.
+
+# Equipment Items
+Found in chests or purchased from merchants.
+Only apply effects when equipped by a character.
+
+# Relic Items
+Function like relics in Slay the Spire — passive effects that apply broadly.
+Found in chests or purchased from merchants.
+Some relics have negative effects, like curses in Slay the Spire.
+Cannot be removed once acquired.
